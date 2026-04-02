@@ -1,0 +1,38 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --font-primary: 'Instrument Sans', sans-serif;
+    --font-secondary: 'Alumni Sans SC', sans-serif;
+    --bs-primary: #0FB6D6;
+}
+
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+body {
+    background: linear-gradient(0deg, #105366 -200%, #191621 100%);
+    min-height: 100vh;
+    color: #FFF;
+    font-family: var(--font-primary);
+
+    .index-h1 {
+        font-family: var(--font-secondary);
+    }
+}
+
+header {
+    font-family: var(--font-primary);
+}
+
+header a {
+    text-decoration: none;
+    color: #0A2B38;
+    font-weight: 500;
+
+}
+
+header a:hover {
+    text-decoration: underline;
+}
