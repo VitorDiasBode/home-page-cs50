@@ -8,7 +8,7 @@
         <title>My Webpage</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body class="bg-index">
         <header class="bg-primary p-3">
             <nav class="d-flex flex-wrap align-items-center justify-content-center gap-3">
                 
@@ -29,21 +29,18 @@
             </nav>
         </header>
 
-        <main>
-            <img src="" alt="logo do sistema com CS50">
-            
-            <h1 class="index-h1">Home Page CS50</h1>
-
-            <h2>Aqui está parte dos meus pensamentos nas partes do curso que mais me interessaram</h2>
-
-            <p>Vou descrever as principais ideias e conhecimentos que eu desenvolvi até agora. Minha inteção é mostrar como foi o processo para absorver o conteúdo.</p>
-
-            <button> Avançar</button>
-
+        <main class="flex-grow-1 d-flex flex-column text-center">
+            <div class="index-page container flex-grow-1 d-flex flex-column align-items-center gap-4">
+                <img class="m-0 m-md-4" src="assets/icons/icon-cs50.svg" width="200" alt="logo do sistema com CS50">
+                <h1 class="title-lg">Home Page CS50</h1>
+                <h2 class="title-md">Here’s some of my experience with the course</h2>
+                <p class="paragraph">I’ll share some of my thoughts and what I learned that week.<br> My goal is to show what my study process was like.</p>
+                <a class="btn btn-primary" role="button">Next</a>
+            </div>
         </main>
 
-        <footer>
-            <small>2026 HomePage. Criado para o curso CS50.</small>
+        <footer class="d-flex mt-auto justify-content-center p-3">
+            <small>2026 <b>HomePage</b>. This project was developed as a part of the CS50 course.</small>
         </footer>
     </body>
 </html>

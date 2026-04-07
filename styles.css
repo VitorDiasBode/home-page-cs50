@@ -1,9 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root {
     --font-primary: 'Instrument Sans', sans-serif;
     --font-secondary: 'Alumni Sans SC', sans-serif;
+    --font-terciary: 'Alumni Sans', sans-serif;
     --bs-primary: #0FB6D6;
 }
 
@@ -11,15 +12,52 @@
     background-color: var(--bs-primary) !important;
 }
 
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    min-width: 200px;
+    width: 100%;
+    max-width: 330px;
+}
+
+.btn-primary:hover {
+    background-color: #0c869e;
+    border-color: #0c869e;
+}
+
+.btn-primary:active {
+    background-color: #0c7388 !important;
+    border-color: #0c7388 !important;
+}
+
 body {
-    background: linear-gradient(0deg, #105366 -200%, #191621 100%);
+    background-color: #191621;
     min-height: 100vh;
     color: #FFF;
     font-family: var(--font-primary);
+    display: flex;
+    flex-direction: column;
+}
 
-    .index-h1 {
-        font-family: var(--font-secondary);
-    }
+.bg-index {
+    background: linear-gradient(0deg, #105366 -50%, #191621 50%);
+}
+
+footer {
+    background: linear-gradient(0deg, #191621 -15%, #105366 200%);
+}
+
+.title-lg {
+    font-family: var(--font-secondary);
+    font-size: 6rem;
+}
+.title-md {
+    font-family: var(--font-secondary);
+    font-size: 3rem;
+}
+.paragraph {
+    font-family: var(--font-terciary);
+    font-size: 1.5rem;
 }
 
 header {
@@ -30,9 +68,12 @@ header a {
     text-decoration: none;
     color: #0A2B38;
     font-weight: 500;
-
 }
 
 header a:hover {
     text-decoration: underline;
+}
+
+.card_title {
+
 }
