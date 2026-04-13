@@ -36,31 +36,31 @@
                     <div class="row g-4 justify-content-center"> 
 
                         <div class="col-md-5">
-                            <div class="card">
+                            <div class="card algorithm-card">
                                 <div class="card-body">
                                     <h3 class="card-title">Not every path is efficient</h3>
                                     <p id="desc1" class="d-none card-text">While working with Linear Search, I reflected on doing things the hard way. I had fun implementing the algorithms, and it made me value efficiency even more.</p>
-                                    <button class="btn btn-outline-primary toggle-btn" data-target="desc1">Open</button>
+                                    <button class="btn btn-primary toggle-btn" data-target="desc1">Read</button>
                                 </div>
                             </div>
                         </div>
                             
                         <div class="col-md-5">
-                            <div class="card">
+                            <div class="card algorithm-card">
                                 <div class="card-body">
                                     <h3 class="card-title">Algorithms begin with clarity</h3>
-                                    <p id="desc2" class="d-none card-text">Before thinking about code, I learned that every problem follows a clear flow: input, processing, and output. Seeing this in the course made me realize I had experienced it in practice. It’s not just about writing code, it’s about solving problems.</p>
-                                    <button class="btn btn-outline-primary toggle-btn" data-target="desc2">Open</button>
+                                    <p id="desc2" class="card-text collap">Before thinking about code, I learned that every problem follows a clear flow: input, processing, and output. Seeing this in the course made me realize I had experienced it in practice. It’s not just about writing code, it’s about solving problems.</p>
+                                    <button class="btn btn-primary toggle-btn" aria-expanded="false" data-target="desc2">Read</button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-5">
-                            <div class="card">
+                            <div class="card algorithm-card">
                                 <div class="card-body">
                                     <h3 class="card-title">Thinking about scale changes everything</h3>
                                     <p id="desc3" class="d-none card-text">Analyzing algorithms with Big O made me think about the impact of data growth. A solution that works today may fail tomorrow. Building solution without considering scale can be a mistake.</p>
-                                    <button class="btn btn-outline-primary toggle-btn" data-target="desc3">Open</button>
+                                    <button class="btn btn-primary toggle-btn" data-target="desc3">Read</button>
                                 </div>     
                             </div>
                         </div>
@@ -85,7 +85,7 @@
                 const isHidden = paragraph.classList.contains("d-none");
 
                 document.getElementById(paragraphId).classList.toggle("d-none");
-                button.textContent = isHidden ? "Close" : "Open";
+                button.textContent = isHidden ? "Close" : "Read";
                 button.setAttribute("aria-expanded", isHidden);
             }
 

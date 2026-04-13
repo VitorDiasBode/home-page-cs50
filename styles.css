@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 
+/* BOOTSTRAP CLASSES */
+
 :root {
     --font-primary: 'Instrument Sans', sans-serif;
     --font-secondary: 'Alumni Sans SC', sans-serif;
@@ -30,6 +32,20 @@
     border-color: #0c7388 !important;
 }
 
+header {
+    font-family: var(--font-primary);
+}
+
+header a {
+    text-decoration: none;
+    color: #0A2B38;
+    font-weight: 500;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
 body {
     background-color: #191621;
     min-height: 100vh;
@@ -41,10 +57,6 @@ body {
 
 .bg-index {
     background: linear-gradient(0deg, #105366 -50%, #191621 50%);
-}
-
-footer {
-    background: linear-gradient(0deg, #191621 -15%, #105366 200%);
 }
 
 .title-lg {
@@ -61,20 +73,24 @@ footer {
     font-size: 1.5rem;
 }
 
-header {
-    font-family: var(--font-primary);
+footer {
+    background: linear-gradient(0deg, #191621 -15%, #105366 200%);
 }
 
-header a {
-    text-decoration: none;
-    color: #0A2B38;
-    font-weight: 500;
-}
 
-header a:hover {
-    text-decoration: underline;
+/* ALGORITHMS PAGE */
+
+.algorithm-card {
+    color: white;
+    background-color: #1B1A2B;
+    border-radius: 10px;
+    border-color: #2F2E46;
 }
 
 .card-title {
     font-family: var(--font-terciary);
+}
+
+.algorithm-card .btn-primary {
+    max-width: 60px; 
 }
