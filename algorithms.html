@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Algorithms</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header class="bg-primary p-3">
+            <nav class="d-flex flex-wrap align-items-center justify-content-center gap-3">
+                
+                <a class="d-none d-md-block" href="index.html" aria-label="Go to home page" rel="noopener noreferrer">
+                    <img src="assets/icons/icon-cs50.svg" width="60" height="60" alt="">
+                </a>    
+                
+                <div class="d-flex justify-content-center flex-wrap gap-3 gap-lg-5 mx-0 mx-lg-5">
+                    <a href="algorithms.html"><u>Algorithms</u></a>
+                    <a href="data-structures.html">Data Structures</a>
+                    <a href="sql.html">SQL</a>
+                </div>
+
+                <a class="d-none d-md-block" href="https://github.com/VitorDiasBode" aria-label="Go to my Github profile" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/icons/icon-git-hub.svg" width="32" height="32" alt="">
+                </a>
+
+            </nav>
+        </header>
+
+        <main class="d-flex flex-column text-center flex-grow-1">
+            <div class="my-auto">
+                <h1 class="title-lg">Algorithms</h1>
+                <div class="container">
+                    <div class="row g-4 justify-content-center"> 
+
+                        <div class="col-md-5">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Not every path is efficient</h3>
+                                    <p id="desc1" class="d-none card-text">While working with Linear Search, I reflected on doing things the hard way. I had fun implementing the algorithms, and it made me value efficiency even more.</p>
+                                    <button class="btn btn-outline-primary toggle-btn" data-target="desc1">Open</button>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="col-md-5">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Algorithms begin with clarity</h3>
+                                    <p id="desc2" class="d-none card-text">Before thinking about code, I learned that every problem follows a clear flow: input, processing, and output. Seeing this in the course made me realize I had experienced it in practice. It’s not just about writing code, it’s about solving problems.</p>
+                                    <button class="btn btn-outline-primary toggle-btn" data-target="desc2">Open</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Thinking about scale changes everything</h3>
+                                    <p id="desc3" class="d-none card-text">Analyzing algorithms with Big O made me think about the impact of data growth. A solution that works today may fail tomorrow. Building solution without considering scale can be a mistake.</p>
+                                    <button class="btn btn-outline-primary toggle-btn" data-target="desc3">Open</button>
+                                </div>     
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="d-flex mt-auto justify-content-center p-3">
+            <small>2026 <b>HomePage</b>. This project was developed as a part of the CS50 course.</small>
+        </footer>
+
+        <script>
+            function openCard (e) {
+                const button = e.currentTarget;
+                const paragraphId = e.target.getAttribute("data-target");
+
+                if (!paragraphId) return;
+
+                const paragraph = document.getElementById(paragraphId);
+                const isHidden = paragraph.classList.contains("d-none");
+
+                document.getElementById(paragraphId).classList.toggle("d-none");
+                button.textContent = isHidden ? "Close" : "Open";
+                button.setAttribute("aria-expanded", isHidden);
+            }
+
+            document.querySelectorAll(".toggle-btn").forEach( (element) => element.addEventListener("click", openCard) );
+
+        </script>
+    </body>
+</html>
+
+

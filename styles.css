@@ -49,7 +49,8 @@ footer {
 
 .title-lg {
     font-family: var(--font-secondary);
-    font-size: 6rem;
+    font-size: clamp(2rem, 8vw, 6rem);
+    text-wrap: balance;
 }
 .title-md {
     font-family: var(--font-secondary);
@@ -74,6 +75,6 @@ header a:hover {
     text-decoration: underline;
 }
 
-.card_title {
-
+.card-title {
+    font-family: var(--font-terciary);
 }
