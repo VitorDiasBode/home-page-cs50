@@ -91,7 +91,8 @@ footer {
 }
 
 .algorithm-card .btn-primary {
-    max-width: 60px; 
+    min-width: 60px; 
+    width: auto;
 }
 
 .desc {
@@ -100,6 +101,6 @@ footer {
     transition: max-height 0.5s ease-in-out;
 }
 
-.show {
+.desc-expand {
     max-height: 200px;
 }

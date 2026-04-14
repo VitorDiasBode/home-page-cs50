@@ -39,8 +39,8 @@
                             <div class="card algorithm-card">
                                 <div class="card-body">
                                     <h3 class="card-title">Not every path is efficient</h3>
-                                    <p id="desc1" class="card-text desc show">While working with Linear Search, I reflected on doing things the hard way. I had fun implementing the algorithms, and it made me value efficiency even more.</p>
-                                    <button class="btn btn-primary toggle-btn" data-target="desc1">Read</button>
+                                    <p id="desc1" class="card-text desc">While working with Linear Search, I reflected on doing things the hard way. I had fun implementing the algorithms, and it made me value efficiency even more.</p>
+                                    <button class="btn btn-primary toggle-btn" data-target="desc1" aria-expanded="false">Read</button>
                                 </div>
                             </div>
                         </div>
@@ -49,8 +49,8 @@
                             <div class="card algorithm-card">
                                 <div class="card-body">
                                     <h3 class="card-title">Algorithms begin with clarity</h3>
-                                    <p id="desc2" class="card-text desc show">Before thinking about code, I learned that every problem follows a clear flow: input, processing, and output. Seeing this in the course made me realize I had experienced it in practice. It’s not just about writing code, it’s about solving problems.</p>
-                                    <button class="btn btn-primary toggle-btn" aria-expanded="false" data-target="desc2">Read</button>
+                                    <p id="desc2" class="card-text desc">Before thinking about code, I learned that every problem follows a clear flow: input, processing, and output. Seeing this in the course made me realize I had experienced it in practice. It’s not just about writing code, it’s about solving problems.</p>
+                                    <button class="btn btn-primary toggle-btn" aria-expanded="false" data-target="desc2" aria-expanded="false">Read</button>
                                 </div>
                             </div>
                         </div>
@@ -59,8 +59,8 @@
                             <div class="card algorithm-card">
                                 <div class="card-body">
                                     <h3 class="card-title">Thinking about scale changes everything</h3>
-                                    <p id="desc3" class="card-text desc show">Analyzing algorithms with Big O made me think about the impact of data growth. A solution that works today may fail tomorrow. Building solution without considering scale can be a mistake.</p>
-                                    <button class="btn btn-primary toggle-btn" data-target="desc3">Read</button>
+                                    <p id="desc3" class="card-text desc">Analyzing algorithms with Big O made me think about the impact of data growth. A solution that works today may fail tomorrow. Building solution without considering scale can be a mistake.</p>
+                                    <button class="btn btn-primary toggle-btn" data-target="desc3" aria-expanded="false">Read</button>
                                 </div>     
                             </div>
                         </div>
@@ -77,14 +77,14 @@
         <script>
             function openCard (e) {
                 const button = e.currentTarget;
-                const paragraphId = e.target.getAttribute("data-target");
+                const paragraphId = e.currentTarget.getAttribute("data-target");
 
                 if (!paragraphId) return;
 
                 const paragraph = document.getElementById(paragraphId);
                 
-                document.getElementById(paragraphId).classList.toggle("show");
-                const isVisible = paragraph.classList.contains("show");
+                paragraph.classList.toggle("desc-expand");
+                const isVisible = paragraph.classList.contains("desc-expand");
 
                 button.textContent = isVisible ? "Close" : "Read";
                 button.setAttribute("aria-expanded", isVisible);
