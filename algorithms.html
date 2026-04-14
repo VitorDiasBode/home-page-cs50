@@ -77,7 +77,7 @@
         <script>
             function openCard (e) {
                 const button = e.currentTarget;
-                const paragraphId = e.currentTarget.getAttribute("data-target");
+                const paragraphId = button.getAttribute("data-target");
 
                 if (!paragraphId) return;
 

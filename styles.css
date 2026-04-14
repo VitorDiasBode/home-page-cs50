@@ -15,6 +15,7 @@
 }
 
 .btn-primary {
+    color: #011215;
     background-color: var(--bs-primary);
     border-color: var(--bs-primary);
     min-width: 200px;
