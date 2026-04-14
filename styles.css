@@ -77,7 +77,6 @@ footer {
     background: linear-gradient(0deg, #191621 -15%, #105366 200%);
 }
 
-
 /* ALGORITHMS PAGE */
 
 .algorithm-card {
@@ -93,4 +92,14 @@ footer {
 
 .algorithm-card .btn-primary {
     max-width: 60px; 
+}
+
+.desc {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.show {
+    max-height: 200px;
 }
