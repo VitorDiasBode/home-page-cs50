@@ -30,9 +30,31 @@
         </header>
 
         <main class="flex-grow-1 d-flex flex-column text-center align-items-center">
-            <div class="my-auto">
+            <div class="mb-auto mt-5">
                 <h1 class="title-lg">Data Structures</h1>
-            
+
+                <div class="d-flex gap-4 h-100">
+                    <button class="btn btn-primary btn-ds-card m-1" card-id="1">Card 1</button>
+                    <button class="btn btn-primary btn-ds-card m-1" card-id="2">Card 2</button>
+                    <button class="btn btn-primary btn-ds-card m-1" card-id="3">Card 3</button>
+                </div>
+                
+                <div class="cards-container">
+                    <!-- Grupo para cada tab com id e classe -->
+                    <div id="card-1"class="ds-card">
+                        <h2 class="">Título</h2>
+                        <p>paragraph</p>
+                    </div>
+                    <div id="card-2"class="ds-card">
+                        <h2 class="">Título2</h2>
+                        <p>paragraph2</p>
+                    </div>
+                    <div id="card-3"class="ds-card">
+                        <h2 class="">Título3</h2>
+                        <p>paragraph3</p>
+                    </div>
+                </div>
+
                 <a class="btn btn-primary mb-5" href="sql.html" role="button">Next</a>
             
             </div>
@@ -41,5 +63,22 @@
         <footer class="d-flex mt-auto justify-content-center p-3">
             <small>2026 <b>HomePage</b>. This project was developed as a part of the CS50 course.</small>
         </footer>
+
+        <script>
+            document.querySelectorAll(".btn-ds-card").forEach( (button) => {
+                button.addEventListener("click", (e) => {
+                    const cardId = button.getAttribute("card-id");
+
+                    document.querySelectorAll(".ds-card").forEach( (card) => card.classList.remove("active"));
+                    console.log("card-" + cardId);
+                    document.querySelector("#card-" + cardId).classList.add("active");
+                })
+            });
+            /* 
+                Query selector para adicionar o event listener nos botoes
+                    Remover a classe de ativo das tabs
+                    Adicionar a classe ao tab que foi selecionado pelo botao
+             */
+        </script>
     </body>
 </html>
