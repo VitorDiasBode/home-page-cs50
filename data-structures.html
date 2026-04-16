@@ -34,13 +34,13 @@
                 <h1 class="title-lg">Data Structures</h1>
 
                 <div class="d-flex gap-4 h-100">
-                    <button class="btn btn-primary btn-ds-card m-1" card-id="1">Data Flow</button>
+                    <button class="btn btn-primary btn-ds-card m-1 fw-bold" card-id="1">Data Flow</button>
                     <button class="btn btn-primary btn-ds-card m-1" card-id="2">Memory</button>
                     <button class="btn btn-primary btn-ds-card m-1" card-id="3">Performance</button>
                 </div>
                 
                 <!-- Grupo para cada tab com id e classe -->
-                <div id="card-1" class="ds-card">
+                <div id="card-1" class="ds-card active">
                     <h2 class="">Stack vs Queue</h2>
                     <p>It was interesting to reflect on how data flows in and out of  a system, and how that completely shapes its structure. It made me consider different scenarios where each approach would be more appropriate</p>
                 </div>
@@ -70,6 +70,9 @@
                     document.querySelectorAll(".ds-card").forEach( (card) => card.classList.remove("active"));
                     console.log("card-" + cardId);
                     document.querySelector("#card-" + cardId).classList.add("active");
+
+                    document.querySelectorAll(".btn-ds-card").forEach( (btn) => btn.classList.remove("fw-bold"));
+                    button.classList.add("fw-bold")
                 })
             });
         </script>

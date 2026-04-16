@@ -111,8 +111,8 @@ footer {
 .ds-card {
     color: white;
     background-color: #1B1A2B;
-    border-radius: 30px;
-    border-color: #2F2E46;
+    border-radius: 100px;
+    border: 1px solid #2F2E46;
 
     transition: opacity 0.25s ease, transform 0.9s ease;
     opacity: 0;
@@ -120,12 +120,22 @@ footer {
     visibility: hidden;
     height: 0px;
     margin: 0px;
+    padding: 0px;
+
+    max-width: 750px;
+
 }
 
 .ds-card.active {
-    transform: translateY(0px);
     opacity: 1; 
+    transform: translateY(0px);
     visibility: visible;
     height: 100%;
     margin: 50px;
+    padding: 30px 40px;
+
 } 
+
+.ds-card.active h2 {
+    margin-bottom: 25px;
+}
