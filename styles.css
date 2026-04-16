@@ -105,3 +105,27 @@ footer {
 .desc-expand {
     max-height: 200px;
 }
+
+/* DATA STRUCTURE PAGE*/
+
+.ds-card {
+    color: white;
+    background-color: #1B1A2B;
+    border-radius: 30px;
+    border-color: #2F2E46;
+
+    transition: opacity 0.25s ease, transform 0.9s ease;
+    opacity: 0;
+    transform: translateY(32px);
+    visibility: hidden;
+    height: 0px;
+    margin: 0px;
+}
+
+.ds-card.active {
+    transform: translateY(0px);
+    opacity: 1; 
+    visibility: visible;
+    height: 100%;
+    margin: 50px;
+} 
