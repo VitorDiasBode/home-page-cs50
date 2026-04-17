@@ -8,7 +8,7 @@
         <title>Data Structures</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body class="bg-index">
+    <body>
         <header class="bg-primary p-3">
             <nav class="d-flex flex-wrap align-items-center justify-content-center gap-3">
                 
@@ -33,7 +33,7 @@
             <div class="mb-auto mt-5">
                 <h1 class="title-lg">Data Structures</h1>
 
-                <div class="d-flex gap-4 h-100">
+                <div class="d-flex flex-wrap justify-content-center">
                     <button class="btn btn-primary btn-ds-card m-1 fw-bold" card-id="1">Data Flow</button>
                     <button class="btn btn-primary btn-ds-card m-1" card-id="2">Memory</button>
                     <button class="btn btn-primary btn-ds-card m-1" card-id="3">Performance</button>
@@ -41,16 +41,16 @@
                 
                 <!-- Grupo para cada tab com id e classe -->
                 <div id="card-1" class="ds-card active">
-                    <h2 class="">Stack vs Queue</h2>
-                    <p>It was interesting to reflect on how data flows in and out of  a system, and how that completely shapes its structure. It made me consider different scenarios where each approach would be more appropriate</p>
+                    <h2 class="card-title">Stack vs Queue</h2>
+                    <p class="card-p">It was interesting to reflect on how data flows in and out of  a system, and how that completely shapes its structure. It made me consider different scenarios where each approach would be more appropriate</p>
                 </div>
                 <div id="card-2" class="ds-card">
-                    <h2 class="">Memory isn’t infinite</h2>
-                    <p>In the past, when I had to work with memory allocation, it was too hard. But this time, the task felt unexpectedly easy. Remembering those past difficulties is comforting, it helps me measure how much I’ve improved</p>
+                    <h2 class="card-title">Memory isn’t infinite</h2>
+                    <p class="card-p">In the past, when I had to work with memory allocation, it was too hard. But this time, the task felt unexpectedly easy. Remembering those past difficulties is comforting, it helps me measure how much I’ve improved</p>
                 </div>
                 <div id="card-3" class="ds-card">
-                    <h2 class="">Data structures shape performance</h2>
-                    <p>Studying Linked Lists, Trees, and Hash Tables made me reflect on the types of problems where each structure is more appropriate and efficient than a simple stack or queue. A system’s efficiency depends on the design choices made behind the scenes</p>
+                    <h2 class="card-title">Data structures shape performance</h2>
+                    <p class="card-p">Studying Linked Lists, Trees, and Hash Tables made me reflect on the types of problems where each structure is more appropriate and efficient than a simple stack or queue. A system’s efficiency depends on the design choices made behind the scenes</p>
                 </div>
 
                 <a class="btn btn-primary mb-5" href="sql.html" role="button">Next</a>
@@ -68,7 +68,6 @@
                     const cardId = button.getAttribute("card-id");
 
                     document.querySelectorAll(".ds-card").forEach( (card) => card.classList.remove("active"));
-                    console.log("card-" + cardId);
                     document.querySelector("#card-" + cardId).classList.add("active");
 
                     document.querySelectorAll(".btn-ds-card").forEach( (btn) => btn.classList.remove("fw-bold"));

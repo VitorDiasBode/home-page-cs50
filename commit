@@ -1,5 +1,0 @@
-update: atualiza estilos da pagina data-structures.html
-- aplica destaque no botao ativo
-- corrige erro com a borda do cartao
-- corrige largura maxima e padding do cartao
-- aplica margin-bottom no titulo do cartão quando estiver ativo

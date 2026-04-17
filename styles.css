@@ -12,14 +12,15 @@
 
 .bg-primary {
     background-color: var(--bs-primary) !important;
+    
 }
 
 .btn-primary {
     color: #011215;
     background-color: var(--bs-primary);
     border-color: var(--bs-primary);
-    min-width: 200px;
-    width: 100%;
+    min-width: 120px;
+    flex: 1 0 auto;
     max-width: 330px;
 }
 
@@ -111,7 +112,7 @@ footer {
 .ds-card {
     color: white;
     background-color: #1B1A2B;
-    border-radius: 100px;
+    border-radius: 80px;
     border: 1px solid #2F2E46;
 
     transition: opacity 0.25s ease, transform 0.9s ease;
@@ -131,11 +132,23 @@ footer {
     transform: translateY(0px);
     visibility: visible;
     height: 100%;
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: clamp(0px, 0vw, 50px);
+    margin-right: clamp(0px, 0vw, 50px);
     padding: 30px 40px;
 
-} 
+}  
 
 .ds-card.active h2 {
     margin-bottom: 25px;
+}
+
+.card-title {
+    font-family: var(--font-secondary);
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
+
+}
+.card-p {
+    font-size: 1rem;
 }
