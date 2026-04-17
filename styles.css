@@ -19,8 +19,8 @@
     color: #011215;
     background-color: var(--bs-primary);
     border-color: var(--bs-primary);
-    min-width: 120px;
-    flex: 1 0 auto;
+    min-width: 200px;
+    /* flex: 1; */
     max-width: 330px;
 }
 
