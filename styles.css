@@ -20,7 +20,6 @@
     background-color: var(--bs-primary);
     border-color: var(--bs-primary);
     min-width: 200px;
-    /* flex: 1; */
     max-width: 330px;
 }
 
@@ -151,4 +150,34 @@ footer {
 }
 .card-p {
     font-size: 1rem;
+}
+
+/* SQL PAGE */
+
+.sql-card {
+    max-width: 900px;
+    background-color: #1B1A2B;
+    color: white;
+    border-radius: 50px;
+    border-color: #2F2E46;
+
+}
+
+.sql-card .card-body {
+    text-align: center;
+}
+
+.sql-card .card-title {
+    text-align: right;
+    font: var(--font-primary);
+    padding-right: 2%;
+}
+
+.sql-card pre {
+    display: inline-block;
+    text-align: left;
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-x: auto;
+    margin: 0px;
 }

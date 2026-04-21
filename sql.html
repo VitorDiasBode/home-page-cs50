@@ -40,7 +40,20 @@
                     <p>That gave me the idea of using SQL to search my Markdown files in Obsidian by filtering their properties.</p>
                 </div>
 
-                <div class="sql-card">
+                <div class="card mx-auto sql-card">
+                    <div class="card-body">
+                        <div class="card-title"> &lt/&gt SQL </div>
+                        <pre><code class="language-sql"> 
+SELECT n.file_name
+FROM notas n
+JOIN linked_notes ln 
+ON n.id = ln.note_id
+JOIN notas target
+ON ln.linked_note_id = target.id
+WHERE target.file_name = 'CS50 - Harvard University'
+AND n.path <> 'index';
+                        </code></pre>                        
+                    </div>
 
                 </div>
 
