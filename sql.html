@@ -43,23 +43,23 @@
                     <div class="card-body">
                         <div class="card-title"> &lt/&gt SQL </div>
                         <pre><code class="language-sql"> 
-SELECT n.file_name
-FROM notas n
-JOIN linked_notes ln 
-ON n.id = ln.note_id
-JOIN notas target
-ON ln.linked_note_id = target.id
-WHERE target.file_name = 'CS50 - Harvard University'
-AND n.path <> 'index';
+<span class="sql-keyword">SELECT</span> n.file_name
+<span class="sql-keyword">FROM</span> notas n
+<span class="sql-keyword">JOIN</span> linked_notes ln 
+<span class="sql-keyword">ON</span> n.id = ln.note_id
+<span class="sql-keyword">JOIN</span> notas target
+<span class="sql-keyword">ON</span> ln.linked_note_id = target.id
+<span class="sql-keyword">WHERE</span> target.file_name = <span class="sql-string">'CS50 - Harvard University'</span>
+<span class="sql-keyword">AND</span> n.path &lt&gt <span class="sql-string">'index'</span>;
                         </code></pre>                        
                     </div>
 
                 </div>
 
-                <table class="mx-auto">
+                <table class="mx-auto sql-table">
                     <thead>
                         <tr>
-                            <th>file_name</th>
+                            <th class="table-title">file_name</th>
                         </tr>
                     </thead>
                     <tbody>

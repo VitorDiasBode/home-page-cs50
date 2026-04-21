@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 
 /* BOOTSTRAP CLASSES */
 
@@ -155,7 +155,7 @@ footer {
 /* SQL PAGE */
 
 .sql-card {
-    max-width: 900px;
+    max-width: 500px;
     background-color: #1B1A2B;
     color: white;
     border-radius: 50px;
@@ -180,4 +180,36 @@ footer {
     word-break: break-word;
     overflow-x: auto;
     margin: 0px;
+}
+
+.sql-table {
+    margin: 25px;
+    border: 1px solid #153651;
+    padding: 100px;
+
+    width: 100%;
+    max-width: 750px;
+}
+
+.sql-table tr {
+    border: 2px solid #153651;   
+    font-family: "Cascadia Code", sans-serif;
+}
+
+.sql-table td {
+    padding: 7px 25px; 
+    text-align: left;
+}
+
+.table-title {
+    font-size: large;
+    font-weight: 700;
+}
+
+.sql-keyword {
+    color: var(--bs-primary);
+}
+
+.sql-string {
+    color: #ED760E;
 }
