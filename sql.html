@@ -31,18 +31,17 @@
         </header>
 
         <main class="flex-grow-1 d-flex flex-column justify-content-center text-center">
-            <div class="my-auto">
-                <h1 class="title-lg">SQL</h1>
-                
-                <div class="w-50 mx-auto">
-                    <p>It was enjoyable to work with SQL and handle CSV files. It reminded me of the time when I used Google Sheets to simulate a structured database.</p>
-                    <p>That gave me the idea of using SQL to search my Markdown files in Obsidian by filtering their properties.</p>
-                </div>
+            <h1 class="title-lg">SQL</h1>
+            
+            <div class="w-75 w-md-50 mx-auto">
+                <p>It was enjoyable to work with SQL and handle CSV files. It reminded me of the time when I used Google Sheets to simulate a structured database.</p>
+                <p>That gave me the idea of using SQL to search my Markdown files in Obsidian by filtering their properties.</p>
+            </div>
 
-                <div class="card mx-auto sql-card">
-                    <div class="card-body">
-                        <div class="card-title"> &lt/&gt SQL </div>
-                        <pre><code class="language-sql"> 
+            <div class="card mx-auto sql-card">
+                <div class="card-body">
+                    <div class="card-title"> &lt/&gt SQL </div>
+                    <pre><code class="language-sql"> 
 <span class="sql-keyword">SELECT</span> n.file_name
 <span class="sql-keyword">FROM</span> notas n
 <span class="sql-keyword">JOIN</span> linked_notes ln 
@@ -51,34 +50,33 @@
 <span class="sql-keyword">ON</span> ln.linked_note_id = target.id
 <span class="sql-keyword">WHERE</span> target.file_name = <span class="sql-string">'CS50 - Harvard University'</span>
 <span class="sql-keyword">AND</span> n.path &lt&gt <span class="sql-string">'index'</span>;
-                        </code></pre>                        
-                    </div>
-
+                    </code></pre>                        
                 </div>
 
-                <table class="mx-auto sql-table">
-                    <thead>
-                        <tr>
-                            <th class="table-title">file_name</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>CS50-Artificial Intelligence</td></tr>
-                        <tr><td>CS50-Week 0 - Scratch</td></tr>
-                        <tr><td>CS50-Week 1 - C</td></tr>
-                        <tr><td>CS50-Week 2 - Arrays </td></tr>
-                        <tr><td>CS50-Week 3 - Algorithm</td></tr>
-                        <tr><td>CS50-Week 4 - Memory</td></tr>
-                        <tr><td>CS50-Week 5 - Data Structures</td></tr>
-                        <tr><td>CS50-Week 6 -Python</td></tr>
-                        <tr><td>CS50-Week 7 - SQL</td></tr>
-                        <tr><td>CS50-Week 8 - HTML, CSS, JavaScript</td></tr>
-                    </tbody>
-                </table>
-
-                <a class="btn btn-primary mb-5" href="index.html" role="button">Return to Home Page</a>
-            
             </div>
+
+            <table class="mx-auto sql-table">
+                <thead>
+                    <tr>
+                        <th scope="col"><h2 class="table-title">file_name</h2></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>CS50-Artificial Intelligence</td></tr>
+                    <tr><td>CS50-Week 0 - Scratch</td></tr>
+                    <tr><td>CS50-Week 1 - C</td></tr>
+                    <tr><td>CS50-Week 2 - Arrays </td></tr>
+                    <tr><td>CS50-Week 3 - Algorithm</td></tr>
+                    <tr><td>CS50-Week 4 - Memory</td></tr>
+                    <tr><td>CS50-Week 5 - Data Structures</td></tr>
+                    <tr><td>CS50-Week 6 -Python</td></tr>
+                    <tr><td>CS50-Week 7 - SQL</td></tr>
+                    <tr><td>CS50-Week 8 - HTML, CSS, JavaScript</td></tr>
+                </tbody>
+            </table>
+
+            <a class="btn btn-primary mb-5 mx-auto" href="index.html" role="button">Return to Home Page</a>
+            
 
         </main>
 
